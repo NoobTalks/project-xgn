@@ -24,7 +24,12 @@ function parseArgumentsIntoOptions(rawArgs: string[]): Options {
     }
 }
 
+// async function promptFormMissingOptions(options: Options): {
+    
+// }
+
 export async function cli(args: string[]){
-    // let options = parseArgumentsIntoOptions(args)
-    console.log(arg);
+    let options = parseArgumentsIntoOptions(args);
+    // options = await promptFormMissingOptions(options);
+    return options;
 }
